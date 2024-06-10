@@ -11,9 +11,20 @@ body {
 .Container {
   background-color: white;
   width: 500px;
-  height: 500px;
-  margin: 0 auto;
+  height: 700px;
   display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align children at the start of the container */
+  align-items: center; /* Center children horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visual */
+  position: relative;
+  top: 100px;
+  border-radius: 10px;
+}
+
+.Container img {
+  position: relative;
+  bottom: 50;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
