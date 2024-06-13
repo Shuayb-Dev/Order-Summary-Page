@@ -1,4 +1,4 @@
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,135 +6,184 @@ body{
   background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%);
+  background-size: 100%;
 }
 
-
-.Container{
+.Container {
   background-color: white;
-  height:650px;
-  width:450px;
+  height: 650px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.21);
+  box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.21);
 }
 
-.Container img{
-  width:100%;
-  border-radius:10px 10px 0px 0px;
+.Container img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
-.Container h1{
+.Container h1 {
   font-family: "Red Hat Display", sans-serif;
-  font-weight:900;
-  color:hsl(223, 47%, 23%);
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 
-.box-one{
+.box-one {
   position: relative;
-  bottom:20px;
+  bottom: 20px;
 }
 
-.Container p{
+.Container p {
   font-family: "Red Hat Display", sans-serif;
-  font-weight:400;
-  color:hsl(224, 23%, 55%);
+  font-weight: 400;
+  color: hsl(224, 23%, 55%);
   text-align: justify;
-
 }
 
 .first-line {
   position: relative;
-  left:5px;
+  left: 5px;
 }
 
-.last-line{
+.last-line {
   position: relative;
-  left:70px;
+  left: 70px;
 }
 
-.Banner{
+.Banner {
   display: flex;
   flex-direction: row;
   background-color: hsl(225, 100%, 98%);
-  height:80px;
-  width:400px;
+  height: 80px;
+  width: 400px;
   justify-content: space-between;
   border-radius: 10px;
 }
 
-.Banner img{
+.Banner img {
   position: relative;
-  top:8px;
-  height:50px;
-  width:50px;
+  top: 8px;
+  height: 50px;
+  width: 50px;
 }
 
-.item-one, .item-two, .item-three{
-  padding:10px;
+.item-one,
+.item-two,
+.item-three {
+  padding: 10px;
 }
 
-.item-two{
+.item-two {
   position: relative;
-  right:70px;
-  bottom:3px;
+  right: 70px;
+  bottom: 3px;
 }
 
-.third-line{
+.third-line {
   text-decoration: underline;
-  color:hsl(245, 75%, 52%);
+  color: hsl(245, 75%, 52%);
   font-weight: 700;
   transition-duration: 0.5s;
   cursor: pointer;
 }
 
-.third-line:hover{
-  color:#766cf1;
+.third-line:hover {
+  color: #766cf1;
 }
 
-.second-line{
-  font-weight:700;
-  color:hsl(223, 47%, 23%);
+.second-line {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
 }
 
-.Button-Container{
+.Button-Container {
   position: relative;
-  top:30px;
+  top: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.button-one{
-  margin:10px;
-  color:white;
+.button-one {
+  margin: 10px;
+  color: white;
   background-color: hsl(245, 75%, 52%);
-  height:40px;
-  width:380px;
+  height: 40px;
+  width: 380px;
   border-style: none;
   font-family: "Red Hat Display", sans-serif;
-  font-weight:700;
+  font-weight: 700;
   border-radius: 10px;
-  cursor:pointer;
+  cursor: pointer;
   transition: ease-in-out;
   transition-duration: 0.5s;
 }
 
-.button-one:hover{
-  background-color:#766cf1;
+.button-one:hover {
+  background-color: #766cf1;
 }
 
-.button-two{
-  color:hsl(224, 23%, 55%);
+.button-two {
+  color: hsl(224, 23%, 55%);
   background-color: white;
-  border-style:none;
-  font-weight:700;
-  cursor:pointer;
+  border-style: none;
+  font-weight: 700;
+  cursor: pointer;
   transition: ease-in-out;
   transition-duration: 0.5s;
 }
 
-.button-two:hover{
-  color:hsl(223, 47%, 23%);
+.button-two:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: 100%;
+  }
+
+  .Container {
+    background-color: white;
+    height: 540px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.21);
+    position: relative;
+    bottom: 20px;
+  }
+
+  .Banner {
+    width: 300px;
+  }
+
+  .Banner img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .item-two {
+    position: relative;
+    right: 20px;
+  }
+
+  .button-one,
+  .button-two {
+    position: relative;
+    bottom: 20px;
+    width: 300px;
+  }
 }
